@@ -1,0 +1,20 @@
+header {
+    font-size: 30pt;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: beige;
+}
+
+.title-div {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #9ac3f6;
+}
+
+.logo-div{
+    float:left;
+    width:50px;
+}
+
