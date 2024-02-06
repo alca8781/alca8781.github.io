@@ -8,3 +8,9 @@ header {
     padding: auto;
     background-color: #ad0000;
 }
+
+.logo-div{
+    float:left;
+    width:1px;
+}
+
