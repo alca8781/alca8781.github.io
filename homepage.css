@@ -1,14 +1,14 @@
-header {
+/* header {
     font-size: 30pt;
     margin-bottom: 10px;
     display: flex;
     flex-flow: row wrap;
-    background-color: beige;
-}
+    background-color: rgb(74, 79, 91);
+} */
 
-.title-div {
+header {
+    font-size: 40pt; 
     text-align: center;
-    text-decoration: none;
     padding: 10px;
     background-color: #9ac3f6;
 }
