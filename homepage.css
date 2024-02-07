@@ -6,19 +6,24 @@
     height: 60pt;
 }
 
+header{
+    flex: 1 1 100px;
+
+}
+
 header img {
-    float: left;
+    float: center;
     width: 80px; 
     margin-right: 20px;
     margin-left: 20px;
-    margin-top: 10px; 
+    margin-top: 2px; 
 }
 
 nav {
     margin-top: 30px;
     display: flex; 
-    justify-content: left; 
-    font-size: 18pt;
+    justify-content: right; 
+    font-size: 12pt;
     color:#9ac3f6
 }
 
