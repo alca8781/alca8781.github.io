@@ -3,7 +3,7 @@
     text-align: center;
     flex: 1 1 100px;
     background-color: #9ac3f6;
-    /* display: flex inline-block; */ 
+    height: 50pt;
 }
 
 header img {
@@ -17,8 +17,9 @@ header img {
 nav {
     margin-top: 30px;
     display: flex; 
-    justify-content: center; 
-    background-color: #bebebe;
+    justify-content: right; 
+    font-size: 18pt;
+    color:#9ac3f6
 }
 
 
