@@ -7,7 +7,7 @@
 }
 
 header img {
-    float: center;
+    float: left;
     width: 80px; 
     margin-right: 20px;
     margin-left: 20px;
@@ -17,7 +17,7 @@ header img {
 nav {
     margin-top: 30px;
     display: flex; 
-    justify-content: center; 
+    justify-content: left; 
     font-size: 18pt;
     color:#9ac3f6
 }
