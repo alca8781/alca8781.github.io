@@ -3,21 +3,21 @@
     text-align: center;
     flex: 1 1 100px;
     background-color: #9ac3f6;
-    height: 50pt;
+    height: 60pt;
 }
 
 header img {
-    float: left;
+    float: center;
     width: 80px; 
     margin-right: 20px;
     margin-left: 20px;
-    margin-top: 2px; 
+    margin-top: 10px; 
 }
 
 nav {
     margin-top: 30px;
     display: flex; 
-    justify-content: right; 
+    justify-content: center; 
     font-size: 18pt;
     color:#9ac3f6
 }
@@ -31,5 +31,5 @@ ul {
 }
 
 li {
-    margin: 0 10px; /* Add spacing between list items */
+    margin: 0 20px; /* Add spacing between list items */
 }
