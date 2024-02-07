@@ -1,22 +1,29 @@
-header{
-    font-size: 30pt;
+/* title-div,logo-div {
     background-color: #9ac3f6;
-    padding: 50px;
-
-}
+    padding: 0%;
+} */
 
 .title-div{
     font-size: 40pt; 
     text-align: center;
-    padding: 40px;
-    flex-flow: row wrap;
-    display: flex;
+    flex: 1 1 100px;
+    background-color: #9ac3f6;
+    padding: 0%;
+
+    /* display: flex inline-block; */
 }
 
-.logo-div{
+header img{
     float:left;
-    margin-right: 30px;
+    /* margin-right: 30px;
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 2px; */
+
+}
+
+nav{
+    height: 50px;
+    flex: 100%;
+    display: flex;
 }
 
