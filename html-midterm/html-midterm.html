@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error-Filled Page</title>
+
+    <style>
+        .centered-text {
+            text-align: center;
+        }
+    </style>
+
 </head> 
 
 <body> 
@@ -39,7 +46,7 @@
         </tr>
         <tr>
             <td>John</td>
-            <td>25<td>
+            <td>25</td>
         </tr>
         <tr>
             <td>Jane</td>
@@ -49,11 +56,13 @@
 
     <img src="error.jpeg" alt="Error Image">
 
-    <center>This is centered text.<center>
+    <div class="centered-text">
+        This is centered text.
+    </div>
 
-    <!-- <p>bgcolor="lightgray">Text</p> -->
+    <p style="background-color: lightgray;">Text</p>
 
-    <input type="button" value="Click me">
+    <input type="button" value="Click me"> 
 
     <!-- This is an unclosed comment-->
 
@@ -73,23 +82,24 @@
 - Describe what the error was and what you did to fix it
 
 1. missing boiler plate FIX: !enter
-2. extra/incorrect <html> tag FIX: delete <html> 
-3. <head> in the wrong place FIX: delete <head> tag so that <html languade="en" is above the head
-4. missing <head> tag FIX: put head tag above title 
-5. missing </h1> tag FIX: put </h> tag at the end of the line 
-6. missing <p> tag FIX: put <p> tag at the start of the line 
-7. miss matched tag (</ul>) FIX : change </ul> to </ol> 
-8. missing </p> tag FIX: add </p> tag at the end of line 
-9. missing alt discription FIX: alt="Image description"> 
-10. cant change color in HTML needs to be in style sheet 
-11. wrong closing tag FIX: </a> 
-12. miss matched tags FIX: add </table> after the last </tr> 
-13. source is wrong syntax FIX: change source to src
-14. opening tag missing a > FIX: <p> 
-15. missing closing comment FIX: add closing comment tag  
-16. missing closing tag FIX: </a> 
-17. closing tags out of order FIX: </em></p> 
-18. <em> is italics, change to <u> to underline
-19. wrong tags FIX: <dt></dt> 
-20. wrong tags FIX: <dd></dd> 
+2. <head> in the wrong place FIX: move <head> tag so that <html languade="en" is above the head
+3. missing </head> tag FIX: put closing head tag below <title> and <style> tags
+4. missing </h1> tag FIX: put </h> tag at the end of the "Welcome to My Error-Filled Page" 
+5. missing <p> tag FIX: put <p> tag at the start of "This is a paragraph with mismatched tags and missing closing tags." 
+6. miss matched tag (</ul>) FIX : change </ul> to </ol> 
+7. missing </p> tag FIX: add </p> tag at the end of "This is another paragraph without proper indentation."
+8. missing alt discription FIX: alt="Image description"> 
+9. wrong closing tag FIX: </a> 
+10. wrong closing tag FIX: </td>
+11. missing closing tag FIX: </table> 
+12. wrong syntax for image source FIX: change source= to src= 
+13. <center> tag is outdated FIX: create a center-align div to center the text
+14. wrong syntax for font color FIX:  <p style="background-color: lightgray;">Text</p>
+15. missing closing tag for comments FIX: add closing tag for comment
+16. missing closing tag FIX: <a href="#">Link without closing tag</a>
+17. miss ordered tags FIX: </em></p> 
+18. wrong tag for underline FIX: change <em></em> to <u></u> 
+19. wrong tag for Descriptive Item Title FIX: change <li></li> to <dt></dt> 
+20. wrong tag for Descriptive Item Text FIX: change <li></li> to <dd></dd> 
 -->
+
