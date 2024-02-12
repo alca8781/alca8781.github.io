@@ -4,6 +4,7 @@
     flex: 1 1 100px;
     background-color: #9ac3f6;
     height: 60pt;
+    font-family:'Source Sans Pro', arial, sans-serif;
 }
 
 header{
@@ -21,6 +22,7 @@ header img {
 
 nav {
     margin-top: 30px;
+    margin-bottom: 30px;
     display: flex; 
     justify-content: right; 
     font-size: 12pt;
