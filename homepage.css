@@ -3,7 +3,6 @@
     text-align: center;
     flex: 1 1 100px;
     background-color: #9ac3f6;
-    height: 60pt;
     font-family:'Source Sans Pro', arial, sans-serif;
 }
 
@@ -22,7 +21,7 @@ header img {
 
 nav {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     display: flex; 
     justify-content: right; 
     font-size: 12pt;
@@ -39,4 +38,9 @@ ul {
 
 li {
     margin: 0 20px; /* Add spacing between list items */
+}
+
+.icons{
+    float: center; 
+    width :50px; 
 }
