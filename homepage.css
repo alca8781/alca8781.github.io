@@ -42,5 +42,9 @@ li {
 
 .icons{
     float: center; 
-    width :50px; 
+    width :10px; 
+}
+
+a:hover{
+    
 }
