@@ -1,0 +1,160 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+/* Selectors to be matched up with rulesets */
+
+/* .card article img
+.card footer
+.card header
+.card */
+
+/* Rulesets to be matched up with selectors */
+
+.card{
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+
+}
+
+.card footer{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+  height: 3.125em; /* 30px */
+  padding: 0.625em; /* 10px */
+}
+
+.card header{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 0em 0em;
+
+  padding: 0.625em 1.25em;
+  height: 2.063em;
+}
+
+.card article img{
+  max-height: 100%;
+  float: right;
+}
+
+.card header,
+.card footer {
+  height: 3.125em; /* 30px */
+  padding: 0.625em; /* 10px */
+}
+
+h2, p {
+  margin: 0;
+  padding: 0.625;
+}
+
+.card article{
+  height: 12.9em; /* 120px */
+  background-color:  rgba(0, 0, 0, 0.318); 
+}
+
+p{
+  padding:10pt; 
+  padding-left: 10pt;
+}
+
+.card header h2 {
+  font-size: 1.25em; /* 20px */
+  line-height: 3.125em; /* 30px */
+}
+
+.card footer p {
+  font-size: 0.938em; /* 15px */
+  line-height: 3.125em; /* 30px */
+  align-items: baseline;
+}
+
+.card article p {
+  padding-left: 0.625em; /* 10px */
+  color: #f0f0f0; /* fairly light color */
+}
+
+
+
+
+
+.card2{
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: rgb(174, 174, 174);
+  border: 0.2em solid rgb(71, 71, 71);
+  border-radius: 1.5em;
+
+}
+
+.card2 footer{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+  height: 3.125em; /* 30px */
+  padding: 0.625em; /* 10px */
+}
+
+.card2 header{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 0em 0em;
+
+  padding: 0.625em 1.25em;
+  height: 2.063em;
+}
+
+.card2 article img{
+  max-height: 100%;
+  float: right;
+}
+
+.card2 header,
+.card2 footer {
+  height: 3.125em; /* 30px */
+  padding: 0.625em; /* 10px */
+}
+
+h2, p {
+  margin: 0;
+  padding: 0.625;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card2 article{
+  height: 12.9em; /* 120px */
+  background-color:  rgba(0, 0, 0, 0.318); 
+}
+
+p{
+  padding:10pt; 
+  padding-left: 10pt;
+}
+
+.card2 header h2 {
+  font-size: 1.25em; /* 20px */
+  line-height: 3.125em; /* 30px */
+}
+
+.card2 footer p {
+  font-size: 0.938em; /* 15px */
+  line-height: 3.125em; /* 30px */
+  align-items: baseline;
+}
+
+.card2 article p {
+  padding-left: 0.625em; /* 10px */
+  color: #f0f0f0; /* fairly light color */
+}
+
