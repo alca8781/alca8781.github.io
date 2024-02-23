@@ -1,0 +1,49 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(199, 199, 199);
+
+}
+
+article {
+    width: 1080px;
+    height: 900px;
+    margin: 20px auto;
+    position: relative;
+}
+
+address{
+    position: absolute;
+    /* bottom: 8mm;
+    right: 20mm; */
+}
+
+h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    color: white;
+
+}
+
+article {
+    border: 2mm solid rgb(9, 100, 35);
+    background: url(FB_2.jpg) no-repeat;
+    background-color: white;
+}
+
+img {
+    width: 340px;
+    margin: 20pt;
+    border: 1mm solid rgb(241, 204, 20);
+}
+
+h2 {
+    position: absolute;
+    bottom: 400px;  
+    left: 0px;
+}
