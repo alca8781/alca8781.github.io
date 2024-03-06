@@ -1,0 +1,230 @@
+
+body{
+    margin-left: 50pt;
+    margin-right: 50pt;
+}
+
+h1{
+   font-size: 40pt; 
+   color: white;
+   background-color: rgb(66, 66, 87);
+   text-align: center;
+   padding: 20pt;
+}
+
+nav{
+    padding: .5em;
+    display:flex; 
+    justify-content: space-evenly;
+    position: sticky;
+    top:0; 
+    margin-left: 50pt;
+    margin-right: 50pt; 
+    background-color: white;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+}
+  
+nav a {
+    color: rgb(66, 66, 87);
+    text-decoration: none;
+    padding: .2em .5em;
+    margin:0 20pt; 
+    text-align: left;
+}
+
+img{
+    display: block;
+    float: left;
+    margin-left: 100pt;
+    margin-right: auto;
+    width: 40%;
+}
+
+article{
+    margin-top: 150pt;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 700pt;
+    font-size: 20pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(66, 66, 87);
+    text-align: left;
+    
+}
+
+article p{
+    text-align: left;
+    font-size: 15pt;
+    margin-top: 10pt;
+}
+
+
+#grid-parent{
+    display: grid;
+    margin-top: 50pt;
+    grid-template-columns: 2fr 2fr;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(66, 66, 87);
+}
+
+#title{ 
+    text-align: left;
+    margin-left: 20pt;
+}
+#no1{
+    text-align: left;
+    font-size: 12pt;
+    margin-left: 1pt;
+}
+    
+#no2 img{
+    width: 90%;
+    align-items: center;
+    margin-top: 30pt;
+    margin-left: 65pt;
+}
+
+#no3 img{
+    width:110%;
+    align-items: right;
+    margin-left: 10pt;
+    margin-top: 20pt;
+}
+
+#no4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10pt; 
+    margin-top: 40pt;
+    background-color: rgb(66, 66, 87);
+    text-align: center;
+}
+
+#g1{
+ text-align: center;
+ color: aliceblue;
+ font-size: 12pt;
+ margin:20pt; 
+}
+#g2{
+    text-align: center;
+    font-size: 12pt;
+    margin:20pt;
+    color: aliceblue;
+    
+}
+#g3{
+    text-align: center;
+    font-size: 12pt;
+    margin:20pt; 
+    color: aliceblue;
+}
+
+h3{
+    font-size: 16pt;
+    color: aliceblue;
+}
+
+
+#grid-parent2{
+    display: grid;
+    margin-top: 40pt;
+    grid-template-columns: 2fr 2fr;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(66, 66, 87);
+}
+#grid-parent h4{
+    font: 15pt;
+    color: rgb(66, 66, 87);
+}
+
+#no10 img{
+    width: 500pt;
+    margin-left: 0pt;
+    margin-top: 0pt;
+}
+
+#no11{
+    margin-top: 25pt;
+    margin-left: 30pt;
+    font-size: 12pt;
+    text-align: left;
+}
+#no11 p{
+    font-size: 12pt;
+    text-align: left;
+    margin-left: 30pt;
+}
+
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
+    text-align: left;
+    margin-left: 20pt;
+}
+
+h2{
+    margin-top: 4pt;
+    text-align: center;
+}
+
+
+.title2{
+    text-align: left;
+    font-size: 24pt;
+    margin-top: 1pt;
+}
+
+#grid-parent3{
+    display: grid;
+    margin-top: 20pt;
+    grid-template-columns: 1fr 1fr;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(66, 66, 87);
+    gap:10pt
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:1px;
+    background-color: rgb(66, 66, 87);
+}
+.container img{
+        margin-right: 27pt;
+        margin-left: 27pt;
+        width: auto;
+        height: 300px; 
+}
+
+
+#grid-parent4{
+    display: grid;
+    margin-top: 20pt;
+    grid-template-columns: 1fr 1fr;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(66, 66, 87);
+}
+
+#no41 img{
+    margin-top: 30pt;
+    display: inline-grid;
+    width:900px; 
+    align-content: left;
+    margin-left: 2pt;
+}
+
+#no42{
+    font-size: 12pt;
+    text-align: left;
+}
+
+#no42 p {
+    text-align: center;
+}
