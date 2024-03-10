@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(186, 209, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(84, 96, 115);
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    
+}
+
+h1{
+   color:rgb(84, 96, 115);
+}
+
+img{
+    margin-top: 20pt;
+    width:50vw;
+    height: auto;
+}
+
+#red-ball{
+    background-color: rgb(84, 96, 115);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    margin-top: 65pt;
+    margin-left: 200pt;
+}
+
+#red-ball2{
+    background-color: rgb(84, 96, 115);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    margin-top: 65pt;
+    margin-left: 804pt;
+}
+
+:hover a{
+    font-size: 20pt;
+    background-color: rgb(186, 209, 236);
+    transition-duration: 1s;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    animation-name: example;
+    animation-duration: 7s;
+  }
+  
+  @keyframes example {
+    0%   {background-color: rgb(84, 96, 115);}
+    25%  {background-color: white;}
+    50%  {background-color: rgb(84, 96, 115)}
+    100% {background-color: white;}
+  }
