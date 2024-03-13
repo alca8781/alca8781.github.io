@@ -121,7 +121,9 @@
         transform: rotateY(180deg);
       }
 
-      p{
+      p {
         font-size: 11pt;
         padding: 10pt;
-      }
+
+    }
+
