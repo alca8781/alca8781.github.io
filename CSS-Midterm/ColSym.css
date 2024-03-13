@@ -1,0 +1,127 @@
+@media screen and (min-width: 481px) {
+    #wideScreen {
+        background-color: rgb(160, 168, 190);
+    }
+
+   
+    #title{
+        display: grid;
+        background-color: rgb(191, 10, 48);
+        grid-template-columns: 1fr 4fr;
+    }
+    #t1 img{
+        width: 50%;
+        margin: 10pt 8pt 8pt 10pt;
+    }
+    #t2{
+        margin-top: 30pt;
+        margin-left: 50pt;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 35pt;
+        text-align: center;
+        color:white; 
+    }
+
+    #container {
+        
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 3fr; 
+        gap: 2em;
+        margin: 8pt;
+    }
+    #photos img{
+        display: grid;
+        place-content: left;
+        margin: 2pt;
+        width: 380pt;
+    }
+    #no2 img{
+        width:100%; 
+        margin-top: 10pt;
+    }
+
+    article{
+        margin-top: 5pt;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr;
+        gap:8px;
+        margin-bottom: 10pt;
+
+    }
+    
+
+    #a1{
+        background-color:rgba(191, 10, 49, 0.48);
+    }
+    #a2{
+        background-color:rgba(191, 10, 49, 0.48);
+    }
+    #a3{
+        background-color:rgba(191, 10, 49, 0.48);
+        
+    }
+    #a4{
+        background-color:rgba(191, 10, 49, 0.48);
+        
+    }
+    #a5{
+        background-color:rgba(191, 10, 49, 0.48);
+    }
+    #a6{
+        background-color:rgba(191, 10, 49, 0.48);
+    }
+    #a7{
+        background-color:rgba(191, 10, 49, 0.48);
+    }
+    #a8{
+        background-color:rgba(191, 10, 49, 0.48);
+    }
+    #a9{
+        background-color:rgba(191, 10, 49, 0.48);
+    }
+
+    .flip-card {
+        background-color: transparent;
+        height: 100%;
+        perspective: 1000px;
+      }
+      
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.2s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        
+        color: rgb(255, 255, 255);
+      }
+      
+      .flip-card-back {
+        background-color: rgb(191, 10, 48);
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      p{
+        font-size: 11pt;
+        padding: 10pt;
+      }
