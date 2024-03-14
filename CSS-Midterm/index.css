@@ -1,6 +1,6 @@
 
     
-    @media screen and (min-width: 701px) {
+    @media screen and (min-width: 1000px) {
     
    
         #title {
@@ -116,6 +116,9 @@
             text-align: center; 
             font-family:  Helvetica, sans-serif;
         }
+        h4{
+            text-align: center;
+        }
 
         h5 {
             text-align: center;
@@ -125,10 +128,11 @@
             display: none;
         }
 
+
     }
 
 /* Styles for smaller screens (phones) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
     
     #title {
         background-color: rgb(191, 10, 48);
@@ -237,6 +241,9 @@
         h5 {
             font-size: 12pt;
             text-align: center;
+        }
+        article h2{
+            display: none;
         }
     }
     

@@ -1,7 +1,7 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1000px) {
     #wideScreen {
         background-color: rgb(160, 168, 190);
     }
