@@ -40,7 +40,7 @@
             display: inline-block;
             /* place-content: left; */
             margin: 2pt;
-            width: 90%;
+            width: 100%;
         }
 
         #no2 img {
@@ -59,8 +59,8 @@
 
         .flip-card {
             background-color: transparent;
-            width: 400px;
-            height: 600px;
+            width: 300px;
+            height: 440px;
             perspective: 1000px;
         }
 
@@ -98,11 +98,12 @@
         }
 
         p {
-            font-size: 12pt;
+            font-size: 10pt;
             padding: 10pt;
         }
 
         h1 {
+            margin-top: 50pt;
             text-align: center;
         }
         h2{
