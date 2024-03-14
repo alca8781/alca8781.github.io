@@ -26,7 +26,7 @@
 
         #headingimg{
             width:270pt; 
-            margin-left: 320pt;
+            margin-left: 200pt;
         }
         #container {
             position: absolute;
@@ -60,7 +60,7 @@
         .flip-card {
             background-color: transparent;
             width: 300px;
-            height: 440px;
+            height: 450px;
             perspective: 1000px;
         }
 
@@ -98,8 +98,8 @@
         }
 
         p {
-            font-size: 10pt;
-            padding: 10pt;
+            font-size: 9.8pt;
+            padding: 8px;
         }
 
         h1 {
