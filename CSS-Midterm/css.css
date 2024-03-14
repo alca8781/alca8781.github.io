@@ -1,6 +1,6 @@
 
     
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 701px) {
     
    
         #title {
@@ -113,7 +113,7 @@
     }
 
 /* Styles for smaller screens (phones) */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 700px) {
      
         #t1 img {
             display:none; 
@@ -150,7 +150,7 @@
     
     
         .flip-card {
-            margin-left: 50pt;
+            margin-left: 10pt;
             background-color: transparent;
             width: 400px;
             height: 590px;
