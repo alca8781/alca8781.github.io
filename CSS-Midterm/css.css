@@ -116,10 +116,10 @@ body {
     }
 
     #t2 {
-        margin-top: 10pt;
+        margin-top: 8px;
         font-size: 12pt;
         text-align: right;
-        margin-right: 10pt;
+        margin-right: 4pt;
         color: white;
     }
 
@@ -130,12 +130,12 @@ body {
     }
 
     #no1 img {
-        width: 63pt;
+        width: 43pt;
         margin: 2px;
     }
 
     #no2 img {
-        width: 100%;
+        width: 50%;
         margin-top: 5pt;
     }
 
@@ -146,8 +146,8 @@ body {
     }
 
     .flip-card {
-        width: 100%;
-        height: 150pt;
+        width: 50%;
+        height: 100pt;
         margin-bottom: 20px;
     }
 
@@ -158,7 +158,7 @@ body {
 
     .flip-card-front, .flip-card-back {
         width: 100%;
-        height: 150pt;
+        height: 120px;
     }
 
     p {
@@ -167,7 +167,7 @@ body {
     }
 
     h1 {
-        font-size: 20pt;
+        font-size: 12pt;
     }
 
     h5 {
