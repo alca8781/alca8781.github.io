@@ -121,6 +121,9 @@
             text-align: center;
             font-size: 12pt;
         }
+        article h2{
+            display: none;
+        }
 
     }
 
