@@ -114,14 +114,17 @@
 
 /* Styles for smaller screens (phones) */
 @media screen and (max-width: 700px) {
-     
+    
+    #title {
+        background-color: rgb(191, 10, 48);
+    }
         #t1 img {
             display:none; 
         }
     
         #t2 {
             font-size: 12pt;
-            text-align: right;
+            text-align: center;
           
             color: rgb(255, 255, 255);
             background-color:rgb(191, 10, 48) ;
@@ -132,6 +135,7 @@
             display: block;
             margin: 0 auto;
             padding: 10px;
+            align-items:center;
         }
     
         #no1 img {
@@ -139,6 +143,7 @@
         }
     
         #no2 img {
+            align-items:center ;
             width: 100%;
             margin-top: 5pt;
         }
@@ -191,17 +196,19 @@
         }
     
         p {
-            font-size: 10pt;
+            font-size: 11pt;
             padding: 1pt;
+            text-align: center;
         }
     
         h1 {
-            font-size: 12pt;
+            font-size: 16pt;
+            text-align: center;
         }
     
         h5 {
-            font-size: 10pt;
+            font-size: 12pt;
+            text-align: center;
         }
     }
     
-}
