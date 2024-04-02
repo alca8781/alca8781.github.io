@@ -1,0 +1,68 @@
+h1{
+    background-color: rgb(165, 31, 28);
+    padding-right: 30pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    color: white; 
+    font-size: 50pt;
+    text-align: right;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap:8px; 
+}
+
+nav {
+    grid-column: 1;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    background-color: rgb(142, 142, 142);
+}
+
+ul {
+    list-style-type: none;
+    margin: 5pt;
+    padding: 20pt;
+    text-align: left;
+}
+
+a:hover{
+    color: rgb(253, 58, 58); 
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-size: 15pt; 
+}
+
+section img{
+    display: inline-block;
+    margin-left: 0px;
+    margin-left: 0px;
+    height: 278px; 
+    text-align: center; 
+}
+
+.center{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: 0 0px;
+}
+
+h2{
+    text-align: center;
+    margin-right: 20pt;
+    font-size:24pt;
+}
+
+section p {
+    text-align: center;
+    margin-right: 40pt;
+}
