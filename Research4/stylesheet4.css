@@ -1,68 +1,219 @@
-h1{
-    background-color: rgb(165, 31, 28);
-    padding-right: 30pt;
-    padding-top: 10pt;
-    padding-bottom: 10pt;
-    color: white; 
-    font-size: 50pt;
-    text-align: right;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+/* monitor */
+@media screen and (min-width: 1450px) {
+
+    h1{
+        background-color:rgb(232,126,82);
+        padding-right: 10pt;
+        padding-top: 10pt;
+        padding-bottom: 10pt;
+        color: rgb(255, 255, 255); 
+        font-size: 50pt;
+        text-align: right;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+    
+    
+    nav{
+        padding: 10pt;
+        justify-content: space-evenly;
+        position:right;
+        background-color: white;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex; 
+    }
+      
+    nav a {
+        color: rgb(66, 66, 87);
+        text-decoration: none;
+        padding: .1em .3em;
+        margin:0 24pt; 
+        text-align: right;
+    }
+    
+    a:hover{
+        color: rgb(5, 62, 92); 
+    }
+    
+    a{
+        color: rgb(255, 255, 255);
+        font-size: 15pt; 
+        margin-top:20pt;
+        margin-bottom:20pt;
+    }
+    
+    section img{
+        margin-left: 10px;
+        margin-left: 10px;
+        height: 730pt; 
+    }
 }
 
+/*mac screen*/
+@media screen and (max-width: 1450px) {
 
-article{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap:8px; 
+    h1{
+        background-color:rgb(232,126,82);
+        padding-right: 10pt;
+        padding-top: 10pt;
+        padding-bottom: 10pt;
+        color: rgb(255, 255, 255); 
+        font-size: 40pt;
+        text-align: right;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+    
+    
+    nav{
+        padding: 10pt;
+        justify-content: space-evenly;
+        position:right;
+        background-color: white;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex; 
+    }
+      
+    nav a {
+        color: rgb(66, 66, 87);
+        text-decoration: none;
+        padding: .1em .3em;
+        margin:0 24pt; 
+        text-align: right;
+    }
+    
+    a:hover{
+        color: rgb(5, 62, 92); 
+    }
+    
+    a{
+        color: rgb(255, 255, 255);
+        font-size: 12pt; 
+        margin-top:20pt;
+        margin-bottom:20pt;
+    }
+    
+    section img{
+        margin-left: 10px;
+        margin-left: 10px;
+        height: 545pt; 
+    }
 }
 
-nav {
-    grid-column: 1;
-    margin-top: 11px;
-    margin-bottom: 11px;
-    background-color: rgb(142, 142, 142);
+/*small wind0w*/
+@media screen and (max-width: 500px) {
+
+    h1{
+        background-color:rgb(232,126,82);
+        padding-right: 10pt;
+        padding-top: 10pt;
+        padding-bottom: 10pt;
+        color: rgb(255, 255, 255); 
+        font-size: 20pt;
+        text-align: right;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+    
+    
+    nav{
+        padding: 10pt;
+        justify-content: space-evenly;
+        position:right;
+        background-color: white;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex; 
+    }
+      
+    nav a {
+        color: rgb(66, 66, 87);
+        text-decoration: none;
+        padding: .1em .3em;
+        margin:0 4pt; 
+        text-align: right;
+    }
+    
+    a:hover{
+        color: rgb(5, 62, 92); 
+    }
+    
+    a{
+        color: rgb(255, 255, 255);
+        font-size: 8pt; 
+        margin-top:20pt;
+        margin-bottom:20pt;
+    }
+    
+    section img{
+        margin-left: 10px;
+        margin-left: 10px;
+        height: 185pt; 
+    }
 }
 
-ul {
-    list-style-type: none;
-    margin: 5pt;
-    padding: 20pt;
-    text-align: left;
-}
+/*phone*/ 
+@media screen and (max-width: 414px) {
 
-a:hover{
-    color: rgb(253, 58, 58); 
-}
-
-a{
-    color: rgb(255, 255, 255);
-    font-size: 15pt; 
-}
-
-section img{
-    display: inline-block;
-    margin-left: 0px;
-    margin-left: 0px;
-    height: 278px; 
-    text-align: center; 
-}
-
-.center{
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    margin: 0 0px;
-}
-
-h2{
-    text-align: center;
-    margin-right: 20pt;
-    font-size:24pt;
-}
-
-section p {
-    text-align: center;
-    margin-right: 40pt;
+    h1{
+        background-color:rgb(232,126,82);
+        padding-right: 10pt;
+        padding-top: 10pt;
+        padding-bottom: 10pt;
+        color: rgb(255, 255, 255); 
+        font-size: 15pt;
+        text-align: right;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+    
+    
+    nav{
+        padding: 10pt;
+        justify-content: space-evenly;
+        position:right;
+        background-color: white;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex; 
+    }
+      
+    nav a {
+        color: rgb(66, 66, 87);
+        text-decoration: none;
+        padding: .1em .3em;
+        margin:0 2pt; 
+        text-align: right;
+    }
+    
+    a:hover{
+        color: rgb(5, 62, 92); 
+    }
+    
+    a{
+        color: rgb(255, 255, 255);
+        font-size: 8pt; 
+        margin-top:12pt;
+        margin-bottom:20pt;
+    }
+    
+    section img{
+        margin-left: 10px;
+        margin-left: 10px;
+        height: 185pt; 
+    }
 }
