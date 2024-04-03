@@ -77,7 +77,7 @@ body{
     }
     #no1 h4 img{
         width:300pt;
-        padding-top: 17pt;
+        padding-top: 170pt;
     }
     #no2 h4 img{
         width:300pt;
@@ -179,35 +179,34 @@ body{
     }
 
     article{
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
         padding: 6px;
-        gap:10px; 
     }
 
     h3{
         font-size:20pt;
         color:rgb(232,126,82);
+        text-align: center;
     }
 
     h4{
         font-size: 8pt;
         text-align: left;
+        text-align: center;
     }
 
     #no1 h4 img{
-        width:120pt;
-        padding-top: 189pt;
+        width:200pt;
+        padding-top: 10pt;
     }
 
     #no2 h4 img{
-        width:120pt;
-        padding-top: 30pt;
+        width:200pt;
+        padding-top: 10pt;
     }
 
     #no3 h4 img{
-        width:120pt;
-        padding-top: 255pt;
+        width:200pt;
+        padding-top: 10pt;
     }
 
     h5{
@@ -218,19 +217,17 @@ body{
     }
 
     article2{
-        display: grid;
-        grid-template-columns:2fr 2fr;
+        text-align: center;
         padding: 10pt;
         margin-left: 10pt;
-        gap:20px; 
     }
 
     article2 #no1 img{
-        width:150pt;
+        width:200pt;
     }
 
     article2 #no2 img{
-        width:150pt;
-        padding-top: 95pt;
+        width:200pt;
+        padding-top: 10pt;
     }
 }
