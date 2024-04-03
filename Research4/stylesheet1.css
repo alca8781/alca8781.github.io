@@ -1,6 +1,9 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
 /* monitor */
 @media screen and (min-width: 1450px) {
-
+/*homepage*/
     h1{
         background-color:rgb(232,126,82);
         padding-right: 10pt;
@@ -11,22 +14,18 @@
         text-align: right;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     }
-    
-    
     nav{
         padding: 10pt;
         justify-content: space-evenly;
         position:right;
         background-color: white;
     }
-    
     nav ul {
         margin: 0;
         padding: 0;
         list-style: none;
         display: flex; 
-    }
-      
+    } 
     nav a {
         color: rgb(66, 66, 87);
         text-decoration: none;
@@ -34,22 +33,79 @@
         margin:0 24pt; 
         text-align: right;
     }
-    
     a:hover{
         color: rgb(5, 62, 92); 
     }
-    
     a{
         color: rgb(255, 255, 255);
         font-size: 15pt; 
         margin-top:20pt;
         margin-bottom:20pt;
     }
-    
     section img{
         margin-left: 10px;
         margin-left: 10px;
         height: 730pt; 
+    }
+
+
+    /*background info*/
+    h2{
+        font-size: 0pt;
+        text-align: center;
+        margin-top: 40pt;
+    }
+    p{
+        text-align: center;
+        font-size: 20pt;
+        color: rgb(232,126,82);;
+    }
+    article{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        padding: 10pt;
+        margin-left: 100pt;
+    }
+    h3{
+    font-size:30pt;
+    color:rgb(232,126,82);
+    }
+    h4{
+        font-size: 12pt;
+        text-align: left;
+    }
+    #no1 h4 img{
+        width:300pt;
+        padding-top: 155pt;
+    }
+    #no2 h4 img{
+        width:300pt;
+        padding-top: 30pt;
+    }
+    #no3 h4 img{
+        width:300pt;
+        padding-top: 200pt;
+        
+    }
+    h5{
+        text-align: center;
+        font-size:30pt;
+        color:rgb(232,126,82);
+        background-color: rgba(16, 101, 101, 0.306);
+    }
+    article2{
+        display: grid;
+        grid-template-columns:2fr 2fr;
+        padding: 10pt;
+        margin-left: 100pt;
+    }
+    article2 #no1 img{
+        width:400pt;
+    }
+    article2 #no2 img{
+        width:400pt;
+        padding-top: 45pt;
+    
     }
 }
 
@@ -218,4 +274,65 @@
         margin-left: 2px;
         height: 700px; 
     }
+}
+
+
+h2{
+    font-size: 0pt;
+    text-align: center;
+    margin-top: 40pt;
+}
+
+p{
+    text-align: center;
+    font-size: 20pt;
+    color: rgb(232,126,82);;
+}
+
+article{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding: 10pt;
+    margin-left: 100pt;
+}
+h3{
+font-size:30pt;
+color:rgb(232,126,82);
+}
+h4{
+    font-size: 12pt;
+    text-align: left;
+}
+#no1 h4 img{
+    width:300pt;
+    padding-top: 155pt;
+}
+#no2 h4 img{
+    width:300pt;
+    padding-top: 30pt;
+}
+#no3 h4 img{
+    width:300pt;
+    padding-top: 200pt;
+    
+}
+h5{
+    text-align: center;
+    font-size:30pt;
+    color:rgb(232,126,82);
+    background-color: rgba(16, 101, 101, 0.306);
+}
+article2{
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    padding: 10pt;
+    margin-left: 100pt;
+}
+article2 #no1 img{
+    width:400pt;
+}
+article2 #no2 img{
+    width:400pt;
+    padding-top: 45pt;
+
 }
