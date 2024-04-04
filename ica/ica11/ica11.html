@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ica11</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function start</title>
+    <style>
+        .msgBox {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 242px;
+            background: #d1df38;
+        }
+
+        .msgBox p {
+            line-height: 1.5;
+            padding: 10px 20px;
+            color:white;
+            padding-left: 82px;
+            background-position: 25px center;
+            background-repeat: no-repeat;
+        }
+
+        .msgBox button {
+            background: none;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1.1rem;
+            color: w#3ebb55;
+            
+        }
+    </style>
 </head>
-<style> 
-    .msgBox{
-        width: 200px;
-        width: 242px;
-    }
-
-    .msgBox p { 
-        padding-left: 82px;
-        background-position: 25px center;
-        background-repeat: no-repeat;
-
-    }
-
-    .msgBox button{
-        position: absolute;
-
-    }
-
-
-</style> 
 
 <body>
-   
-    <button>Display message box</button> 
+    <button>Display message box</button>
 
-    <script> 
+    <script>
         const btn = document.querySelector("button");
+        btn.addEventListener("click", () => {
+            displayMessage("Your inbox is almost full — delete some mails", "warning");
+            displayMessage("Brian: Hi there, how are you today?", "chat");
+        });
 
-        btn.addEventListener("click", () => displayMessage(userInput()));
-
-        function displayMessage(msgText) {
+        function displayMessage(msgText, msgType) {
             const body = document.body;
 
             const panel = document.createElement("div");
@@ -51,26 +63,21 @@
             panel.appendChild(closeBtn);
 
             closeBtn.addEventListener("click", () =>
-            panel.parentNode.removeChild(panel),
-            ); 
-
-            if(msg === "warning")
-            {
-                ms
+                panel.parentNode.removeChild(panel)
+            );
+            if (msgType === "warning") {
+                msg.style.backgroundImage = "url(icons/warning.png)";
+                panel.style.backgroundColor = "blue";
+            } else if (msgType === "chat") {
+                msg.style.backgroundImage = "url(icons/chat.png)";
+                panel.style.backgroundColor = "red";
+            } else {
+                msg.style.paddingLeft = "20px";
             }
+
         }
 
-        function userInput(){
-            let text = prompt("enter a message"); 
-            return (text); 
-        }
-        function warningInput(){
-            let text = prompt("Wwarning or chat?"); 
-            return (text); 
-        }
-
-        btn.addEventListener("click",()=> displayMessage(userInput(), warning) 
-        );
-    </script> 
+    </script>
 </body>
+
 </html>
