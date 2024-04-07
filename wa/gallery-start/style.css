@@ -1,12 +1,19 @@
+body {
+  background-color: rgb(203, 203, 203);
+}
 h1 {
   font-family: helvetica, arial, sans-serif;
   text-align: center;
   color: rgba(5, 2, 72, 0.6);
+  background-color: white;
+  padding: 10pt;
+  border: 4px solid rgba(5, 2, 72, 0.6);
 }
 
 body {
   width: 640px;
   margin: 0 auto;
+  
 }
 
 .full-img {
@@ -39,7 +46,10 @@ button {
 
 .thumb-bar img {
   display: block;
-  width: 20%;
+  width: 19%;
   float: left;
   cursor: pointer;
+  margin-top: 10pt;
+  margin-left: 2px;
+  border: 2px solid rgba(5, 2, 72, 0.6);
 }
