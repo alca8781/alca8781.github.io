@@ -1,0 +1,75 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #5a27f5;
+    background-image: url('shark.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.controls {
+    width: 60%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}
+input{
+    color:green; 
+}
+
+.volume {
+    width: 100%;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
