@@ -1,0 +1,19 @@
+canvas {
+    /* display: block; */
+    margin: 20px auto;
+    background-image: url('underwater.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    
+}
+
+h1{
+    text-align: center;
+    margin: 30pt; 
+    color: rgba(61, 192, 179, 0.98); 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35pt;
+}
+
+ 
