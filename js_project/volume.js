@@ -10,51 +10,56 @@ const bubbles = [];
 // Bubble Class 
 class Bubble {
     constructor(x, y, radius, dx, dy, color, number) {
-        this.x = x;         // x-coordinate of the bubble
-        this.y = y;         // y-coordinate of the bubble
-        this.radius = radius; // radius of the bubble
-        this.dx = dx;       // velocity in the x-direction
-        this.dy = dy;       // velocity in the y-direction
-        this.color = color; // color of the bubble
-        this.number = number; // number inside the bubble
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.dx = dx;
+        this.dy = dy;
+        this.color = color;
+        this.number = number;
+        this.isFrozen = false;
     }
 
     // draw bubble
     draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.strokeStyle = 'grey'; 
-        ctx.stroke();
-        ctx.fillStyle = 'rgba(203, 203, 243, 0.469)';
-        ctx.fill();
-        ctx.closePath();
+        if (!this.isFrozen) {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctx.strokeStyle = 'grey';
+            ctx.stroke();
+            ctx.fillStyle = 'rgba(203, 203, 243, 0.469)';
+            ctx.fill();
+            ctx.closePath();
 
-        // number in bubble
-        ctx.fillStyle = 'white';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.font = `${this.radius}px Lucida Sans`;
-        ctx.fillText(this.number, this.x, this.y);
+            // number in bubble
+            ctx.fillStyle = 'white';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.font = `${this.radius}px Lucida Sans`;
+            ctx.fillText(this.number, this.x, this.y);
+        }
     }
 
     //update bubble position
     update() {
         //bubble reaches canvas edges
-        if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
-            this.dx = -this.dx;
-            this.number = Math.floor(Math.random() * 10) + 1; // Change number when hitting edge
-        }
-        if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
-            this.dy = -this.dy;
-            this.number = Math.floor(Math.random() * 10) + 1; // Change number when hitting edge
-        }
+        if (!this.isFrozen) {
+            if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
+                this.dx = -this.dx;
+                this.number = Math.floor(Math.random() * 10) + 1; // Change number when hitting edge
+            }
+            if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
+                this.dy = -this.dy;
+                this.number = Math.floor(Math.random() * 10) + 1; // Change number when hitting edge
+            }
 
-        // Update position 
-        this.x += this.dx;
-        this.y += this.dy;
+            // Update position 
+            this.x += this.dx;
+            this.y += this.dy;
 
-        // Draw 
-        this.draw();
+            // Draw 
+            this.draw();
+        }
     }
 }
 
@@ -71,15 +76,15 @@ function animate() {
 
 // initialize bubbles
 function bubbleFunc() {
-    // Create 150 random bubbles
-    for (let i = 0; i < 150; i++) {
+    // Create 50 random bubbles
+    for (let i = 0; i < 50; i++) {
         // Randomize properties of each bubble
         const radius = 40;
         const x = Math.random() * (canvas.width - radius * 2) + radius;
         const y = Math.random() * (canvas.height - radius * 2) + radius;
         const dx = (Math.random() - 0.5) * 5;
         const dy = (Math.random() - 0.5) * 5;
-        const color = 'rgba(255, 255, 255, 0.5)'; 
+        const color = 'rgba(255, 255, 255, 0.5)';
 
         // Add the bubble to the array
         bubbles.push(new Bubble(x, y, radius, dx, dy, color, Math.floor(Math.random() * 10) + 1));
@@ -88,5 +93,24 @@ function bubbleFunc() {
     // Start animation
     animate();
 }
+
+// Function to handle click events on the canvas
+function popFunc(event) {
+    const rect = canvas.getBoundingClientRect();
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
+
+    // Check if the click is inside any bubble
+    bubbles.forEach(bubble => {
+        const dist = Math.sqrt((mouseX - bubble.x) ** 2 + (mouseY - bubble.y) ** 2);
+        if (dist < bubble.radius) {
+            bubble.isFrozen = !bubble.isFrozen; // toggle freeze state
+        }
+    });
+}
+
+// Add event listener for click events on the canvas
+canvas.addEventListener('click', popFunc);
+
 
 bubbleFunc();
