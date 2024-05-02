@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 500px) {
     body {
         background-color: rgb(2, 30, 47);
     }
@@ -49,12 +49,13 @@
 
     canvas {
         /* display: block; */
-        margin-left: 30pt;
+        margin-left: 8px;
         background-image: url('ocean.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         width: 380px; 
+        height:300px;
 
         border: 6px solid white;
     }
