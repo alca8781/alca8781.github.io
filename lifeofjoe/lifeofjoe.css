@@ -1,0 +1,109 @@
+
+/* CSS styles for the game */
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.texteverywhere {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15pt;
+  text-align: center;
+}
+.textQuestion{
+    text-align: left;
+    font-size: 15pt;
+}
+
+
+.hidden {
+  display: none;
+}
+.character-container {
+  display: flex;
+  justify-content: center; /* Centers the characters horizontally */
+}
+.character-container > div {
+  margin: 0 20px; /* Adds some space between the characters */
+  background-color: rgb(129, 175, 129);
+}
+.character {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 20px;
+  
+}
+.stats {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-family: Helvetica, sans-serif;
+  font-size: 15pt;
+  padding: 10px; /* Add padding to create space between the content and the border */
+  border: 2px solid #000; /* Add a border around the stats */
+  border-radius: 10px; /* Add rounded corners to the border */
+  color:white; 
+  background-color: rgb(29, 44, 29); /* Set the background color to light blue */
+}
+#gameScreen {
+  width: 60%; /* Set the width to 60% of the screen */
+  margin: 0 auto; /* Center the box horizontally */
+}
+#question {
+  background-color: #e0f2f1; /* Set the background color to light blue */
+  border: 2px solid #000; /* Add a border around the question */
+  border-radius: 10px; /* Add rounded corners to the border */
+  padding: 20px; /* Add padding to create space between the content and the border */
+}
+
+#titleScreen img{
+    align-items: center;
+    margin: 10pt;
+}
+
+#startButton{
+    color:rgb(147, 239, 147); 
+    background-color: grey;
+    border:none; 
+    padding:15pt;
+    font-size: 20pt;
+}
+
+button{
+    padding:5pt 30pt 5pt 30pt; 
+}
+ 
+#titleScreen{
+    text-align: center;
+    color:rgb(34, 95, 37);
+}
+
+#gameScreen img{
+    margin-left: 20pt;
+}
+
+#bigImg{
+    margin-left: 100pt;
+    
+}
+
+#result{
+    display: inline-block;
+    text-align: center;
+    margin:20pt 10pt;
+}
+#questionImage{
+    margin-left: 460pt;
+}
+
+h2{
+   font-size: 40pt;
+   text-align: center;
+   color:red;
+}
+
+#gameOver img{
+    margin-left: 400pt;
+}
+
+#gameWon img{
+    margin-left: 400pt;
+}

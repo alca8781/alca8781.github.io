@@ -1,8 +1,8 @@
 // canvas 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-const width = (canvas.width = window.innerWidth);
-const height = (canvas.height = window.innerHeight);
+const width = canvas.width = window.innerWidth * 0.7;
+const height = canvas.height = window.innerHeight * 0.7;
 
 // store bubbles 
 const bubbles = [];
@@ -77,9 +77,9 @@ function animate() {
 // initialize bubbles
 function bubbleFunc() {
     // Create 50 random bubbles
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 35; i++) {
         // Randomize properties of each bubble
-        const radius = 40;
+        const radius = 32;
         const x = Math.random() * (canvas.width - radius * 2) + radius;
         const y = Math.random() * (canvas.height - radius * 2) + radius;
         const dx = (Math.random() - 0.5) * 5;
@@ -94,17 +94,20 @@ function bubbleFunc() {
     animate();
 }
 
-// Function to handle click events on the canvas
 function popFunc(event) {
     const rect = canvas.getBoundingClientRect();
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
 
-    // Check if the click is inside any bubble
     bubbles.forEach(bubble => {
         const dist = Math.sqrt((mouseX - bubble.x) ** 2 + (mouseY - bubble.y) ** 2);
         if (dist < bubble.radius) {
             bubble.isFrozen = !bubble.isFrozen; // toggle freeze state
+            if (bubble.isFrozen) {
+                document.querySelector('h2').innerText = `Volume: ${bubble.number}`;
+            } else {
+                document.querySelector('h2').innerText = 'Volume: 0';
+            }
         }
     });
 }

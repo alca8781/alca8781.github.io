@@ -1,19 +1,37 @@
+body{
+    background-color: rgb(2, 30, 47);
+}
 canvas {
     /* display: block; */
-    margin: 20px auto;
-    background-image: url('underwater.jpeg');
+    margin-left: 160pt;
+    background-image: url('ocean.jpeg');
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
-    
+
+    border: 6px solid white;
 }
+
 
 h1{
     text-align: center;
-    margin: 30pt; 
+    margin-top: 10pt; 
+    margin-bottom: 10pt;
     color: rgba(61, 192, 179, 0.98); 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 35pt;
+    position: relative;
 }
 
- 
+article{
+    background-color: rgba(61, 192, 179, 0.98); 
+    margin-top: 0%;
+}
+article #volume-text {
+    padding-top: 12pt;
+    padding-bottom: 13pt;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
