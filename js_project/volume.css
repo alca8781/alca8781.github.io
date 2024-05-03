@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+
     body {
         background-color: rgb(2, 30, 47);
     }
@@ -38,7 +38,7 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: white;
     }
-}
+
 
 
 
@@ -85,4 +85,3 @@
         color: white;
     }
 }
-
